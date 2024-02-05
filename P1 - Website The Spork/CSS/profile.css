@@ -1,0 +1,276 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+/*the wok
+.rounded-circle {
+    border-radius: 50% !important;
+}
+*/
+
+.profile-container{
+    margin: 10em auto 2em;
+    display: flex; flex-direction: row;
+    justify-content: center;
+    width: 90%;
+    gap: 3%;
+}
+
+.card-profile {
+    display: flex; flex-direction: column;
+    position: relative;
+    align-items: center;
+    height: max-content; width: 10%;
+    padding: 1em; gap: 1em;
+}
+
+
+.profile-options{
+    display: flex; flex-direction: column;
+}
+
+.profile-type{
+    padding: 1ch;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    border-left: 0 solid var(--light-red);
+    transition: border-left 0.1s ease-in-out;
+}
+
+.active-profile{
+    border-left: 3px solid var(--light-red);
+}
+/*Right side*/
+
+.title{
+    font-size: 1.5em;
+}
+
+.user-profile-info, .profile-info, .owner-profile-info, .my-orders, .delete-account{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    padding: 1em;
+    border: 2px solid rgba(200, 200, 200, 0.25);
+    border-radius: 1em;
+    flex: 0 0 50%;
+}
+
+.user-profile-info h6 {
+    color: var(--light-red);
+}
+
+.user-info-wo-pw{
+    background-color: rgba(0, 0, 0, 0.02);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.submit-user-changes{
+    margin-top: 1em;
+}
+
+.user-setting {
+    max-width: inherit;
+}
+.setting-input:focus{
+    outline: 2px solid var(--light-red);
+    transition: outline 0.1s ease-in-out;
+
+}
+
+.setting-input[type="text"]:disabled {
+    color: initial;
+    outline: none;
+}
+
+.change-password{
+    padding: 10px;
+}
+
+.change-pw-header{
+    display: flex;
+    max-width: fit-content;
+    gap: 1ch;
+}
+
+#button-pw, .showMoreRest{
+    /*width: 30px;*/
+    height: fit-content;
+    background: none;
+    border: none;
+    color: var(--light-red);
+}
+
+.showMoreRest{
+    margin-right: 1em;
+    border: 1px solid var(--light-red);
+    border-radius: 10px;
+    padding: 5px;
+    margin-top: auto;margin-bottom: auto;
+}
+
+#button-pw:hover, .showMoreRest:hover{
+    cursor: pointer;
+}
+
+.setting-input{
+    display: inline-block;
+    width: 50%;
+    padding: 3px; margin-left: 2em;
+    border: 1px solid antiquewhite;
+    border-radius: 1ch;
+}
+
+.edit-button{
+    width: 3em;
+    height: 2em;
+}
+
+.profilepic {
+    position: relative;
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #111;
+}
+
+.profilepic:hover .profilepicContent {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.profilepic:hover .profilepicImg {
+    opacity: .5;
+    cursor: pointer;
+}
+
+.profilepicImg {
+    object-fit: cover;
+    opacity: 1;
+    transition: opacity .2s ease-in-out;
+}
+
+.profilepicContent {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    opacity: 0;
+    transition: opacity .2s ease-in-out;
+}
+
+.profilepicIcon {
+    color: white;
+    padding-bottom: 8px;
+}
+
+.profilepicText {
+    text-transform: uppercase;
+    font-size: 12px;
+    width: 50%;
+    text-align: center;
+}
+
+#fileInput{
+    opacity: 0;
+    position: absolute;
+    height: 100px;
+    width: 100px;
+}
+
+#fileInput:hover{
+    cursor: pointer;
+}
+
+.error3{
+    text-align: center;
+    color: red;
+}
+
+/*Address.php*/
+
+.address-container{
+    margin: 2em auto;
+}
+
+.account-setup{
+    text-align: center;
+    margin: 4em auto 0;
+    width: max-content;
+}
+
+.cvv-exp-date{
+    display: flex;
+}
+
+.cvv-exp-date input {
+    width: 5em;
+}
+
+#exp-month{
+    width: 4em;
+}
+
+.cvv::after{
+    content: "";
+    margin-right: 5px;
+}
+
+.cvv input {width: 3em;}
+
+.user-info, .billing-info, .password-info, .restaurant-info{
+    gap: 0.5em;
+    display: flex;
+    flex-direction: column;
+}
+
+.error4{
+    color: red;
+}
+
+/* Restaurant cards inside profile */
+.restaurant-card-profile{
+    background-color: rgba(0, 0, 0, 0.02);
+    padding: 10px; border-radius: 10px;
+}
+
+.restaurant, .restaurant img{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2em; border-radius: 5px;
+}
+
+.restaurant-desc{
+    flex: 1 0 50%;
+}
+.restaurant-info{
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 2em;
+}
+.restaurantName a{
+    font-weight: bold; font-size: 1.5em;
+}
+.restaurant-settings{margin-top: 2em;}
+#newRest{
+    color: var(--light-red);
+}
+.context-buttons{
+    display: flex; flex-direction: column;
+    gap: 1em;
+}
+
+.orders-table{
+    text-align: center;
+}
+
+.restaurant-orders{
+    margin-top: 2em;
+    display: flex; flex-direction: column;
+}

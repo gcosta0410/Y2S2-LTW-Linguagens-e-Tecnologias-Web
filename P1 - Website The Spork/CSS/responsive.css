@@ -1,0 +1,7 @@
+@media only screen and (max-width: 1120px) {
+    #signUp, #signIn {
+       width: 50px;
+       height: 2.5rem; 
+    }
+
+}

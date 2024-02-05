@@ -1,0 +1,72 @@
+
+#main-container{
+    display: flex;
+    gap: 3em;
+    margin-left: auto;margin-right: auto; margin-bottom: 4em;
+}
+#create-title{
+    margin-top: 6rem; margin-bottom: 1em;
+    text-align: center;
+    font-size: 1.5em; font-weight: bold;
+}
+.content-container{
+    display: flex; flex-direction: column;
+     margin-bottom: auto;
+    /*justify-content: center;*/
+    border: 2px solid rgba(200, 200, 200, 0.25);border-radius: 15px;
+    padding: 10px;
+    min-height: 30em;
+}
+
+/*Left side*/
+
+.container-title{
+    font-size: 1.5em;font-weight:bold;
+}
+
+.newrestaurant-title{
+    margin-bottom: 1em;
+}
+.restaurant-info{
+    border-bottom: none !important;
+    padding-bottom: 0 !important;
+}
+
+.newMenu{
+    min-width: 50em;
+}
+.titleandbutton{
+    display: flex; justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1em;
+}
+#add-item{
+    color: var(--light-red);
+    border-radius: 5px;
+    border: 1px solid var(--light-red);
+    background: none;
+}
+
+.minus{
+    background: none;
+    border: none;
+}
+
+.item-img{
+    opacity: 0;
+    position: absolute;
+    width: inherit;
+    bottom: 1px;
+    left: 8px;
+    cursor: pointer;
+}
+.fa-image{
+    right: 1em;
+    bottom: 0.2em;
+    position: absolute;
+}
+
+.img-input{
+    position: relative;
+    width: 2em;
+}
